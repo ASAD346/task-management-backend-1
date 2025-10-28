@@ -8,8 +8,10 @@ const authRoutes = require('./routes/authRoutes');
 const userRoutes = require('./routes/userRoutes');
 const taskRoutes = require('./routes/taskRoutes');
 
-// Connect to database
-connectDB();
+// Connect to database (async - won't block serverless function startup)
+connectDB().catch(err => {
+  console.error('Database connection error:', err.message);
+});
 
 const app = express();
 
