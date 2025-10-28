@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import User from '../models/User.js'; // adjust path if needed
+import User from '../backend/models/User.js'; // adjust path if needed
 
 export default async function handler(req, res) {
   if (req.method !== 'GET') return res.status(405).send('Only GET allowed');
