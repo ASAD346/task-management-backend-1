@@ -138,3 +138,4 @@ Once deployed, your API will be available at:
 - Functions have a timeout limit (10 seconds on free tier, 60 seconds on Pro)
 - Database connections are reused across function invocations for better performance
 
+
