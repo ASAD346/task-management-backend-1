@@ -9,7 +9,7 @@ const createInitialAdmin = async () => {
   try {
     const response = await axios.post(`${API_URL}/auth/create-admin`, {
       name: 'Admin User',
-      email: 'admin@example.com',
+      email: 'admin1@example.com',
       password: 'password123'
     });
 
